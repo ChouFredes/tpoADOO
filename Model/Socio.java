@@ -5,7 +5,15 @@ import java.util.*;
 
 public class Socio extends Usuario {
 
+    private StateCuenta stateCuenta;
+    private StrategyComunicacion comunicacion;
+    private LocalDate fechaLimiteDevolucion;
+    private Boolean tengoPremio;
+    private List<Prestamo> prestamos;
     private StrategyComunicacion strategyComunicacion;
+
+    public Socio() {
+    }
 
     public void setStrategyComunicacion(StrategyComunicacion strategyComunicacion) {
         this.strategyComunicacion = strategyComunicacion;
@@ -42,21 +50,6 @@ public class Socio extends Usuario {
             System.out.println("No se ha especificado una estrategia de comunicación.");
         }
     }
-
-    public Socio() {
-    }
-
-
-    private StateCuenta stateCuenta;
-
-    private StrategyComunicacion comunicacion;
-
-    private LocalDate fechaLimiteDevolucion;
-
-    private Boolean tengoPremio;
-
-    private List<Prestamo> prestamos;
-
 
     public void comunicarVencimiento() {
     }

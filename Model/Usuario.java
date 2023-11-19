@@ -5,31 +5,17 @@ import java.util.*;
 
 public abstract class Usuario {
 
+    private String nombre;
+    private String apellido;
+    private Integer dni;
+    private String mail;
+    private Integer telefono;
+    private String contrasenia;
+    private Adapter adapter;
+    private StateCuenta estado;
+
     public Usuario() {
     }
-
-    private String nombre;
-
-
-    private String apellido;
-
-
-    private Integer dni;
-
-
-    private String mail;
-
-
-    private Integer telefono;
-
-
-    private String contrasenia;
-
-
-    private Adapter adapter;
-
-
-    private StateCuenta estado;
 
     public String getNombre() {
         return nombre;
@@ -78,7 +64,6 @@ public abstract class Usuario {
     public void setContrasenia(String contrasenia) {
         this.contrasenia = contrasenia;
     }
-
 
     public Ejemplar buscarEjemplar(Integer idEjemplar) {
         // TODO implement here

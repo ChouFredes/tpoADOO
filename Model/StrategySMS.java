@@ -1,7 +1,6 @@
 
 public class StrategySMS implements StrategyComunicacion {
 
-
     private String numeroTelefono;
 
     public StrategySMS(String numeroTelefono) {

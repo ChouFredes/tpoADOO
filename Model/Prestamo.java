@@ -3,91 +3,38 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
 
-/**
- * 
- */
 public class Prestamo {
 
-    /**
-     * Default constructor
-     */
+
+    private Integer idPrestamo;
+    private LocalDate fecha;
+    private LocalDate vencimiento;
+    private Socio socio;
+    private Ejemplar ejemplar;
+    private StatePrestamo estadoPrestamo;
+    private LocalDate fechaEntregado;
+    private List<ObserverPrestamo> observadores;
+
     public Prestamo() {
     }
 
-    /**
-     * 
-     */
-    private Integer idPrestamo;
-
-    /**
-     * 
-     */
-    private LocalDate fecha;
-
-    /**
-     * 
-     */
-    private LocalDate vencimiento;
-
-    /**
-     * 
-     */
-    private Socio socio;
-
-    /**
-     * 
-     */
-    private Ejemplar ejemplar;
-
-    /**
-     * 
-     */
-    private StatePrestamo estadoPrestamo;
-
-    /**
-     * 
-     */
-    private LocalDate fechaEntregado;
-
-    /**
-     * 
-     */
-    private List<ObserverPrestamo> observadores;
-
-    /**
-     * @return
-     */
     public boolean verificarPlazo() {
         // TODO implement here
         return false;
     }
 
-    /**
-     * @return
-     */
     public void notificar() {
         // TODO implement here
     }
 
-    /**
-     * @return
-     */
     public void alertarCercaniaVencimiento() {
         // TODO implement here
     }
 
-    /**
-     * @param observador 
-     * @return
-     */
     public void agregarObservador(ObserverPrestamo observador) {
         // TODO implement here
     }
 
-    /**
-     * @param observador 
-     * @return
-     */
     public void eliminarObservador(ObserverPrestamo observador) {
         // TODO implement here
     }

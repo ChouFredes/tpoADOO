@@ -2,9 +2,6 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * 
- */
 public class BuilderBibliotecario implements BuilderUsuario {
 
     private Bibliotecario bibliotecario = new Bibliotecario();

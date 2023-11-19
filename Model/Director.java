@@ -5,10 +5,8 @@ import java.util.*;
 
 public class Director {
 
-
     public Director() {
     }
-
 
     private BuilderUsuario builder;
 
@@ -23,7 +21,6 @@ public class Director {
                 asignarContrasenia(pass).
                 build();
     }
-
 
     public Usuario crearBibliotecario(BuilderBibliotecario builderBibliotecario,String nombre, String apellido, Integer dni, String mail, Integer telefono, String pass, String medio) {
         return builderBibliotecario.

@@ -2,9 +2,6 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * 
- */
 public interface BuilderUsuario {
 
     public BuilderUsuario asignarNombre(String nombre);
