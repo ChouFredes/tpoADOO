@@ -5,7 +5,7 @@ import java.util.*;
 
 public abstract class Usuario {
 
-    private String nombre;
+	private String nombre;
     private String apellido;
     private Integer dni;
     private String mail;
@@ -78,5 +78,11 @@ public abstract class Usuario {
     public void verHistorialPrestamos() {
         // TODO implement here
     }
+    
+    @Override
+	public String toString() {
+		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", mail=" + mail
+				+ ", telefono=" + telefono + ", contrasenia=" + contrasenia + ", estado=" + estado + "]";
+	}
 
 }

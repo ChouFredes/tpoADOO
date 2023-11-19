@@ -32,11 +32,19 @@ public class Prestamo {
     }
 
     public void agregarObservador(ObserverPrestamo observador) {
-        // TODO implement here
+        observadores.add(observador);
     }
 
     public void eliminarObservador(ObserverPrestamo observador) {
-        // TODO implement here
+        observadores.remove(observador);
     }
 
+	@Override
+	public String toString() {
+		return "Prestamo [idPrestamo=" + idPrestamo + ", fecha=" + fecha + ", vencimiento=" + vencimiento + ", socio="
+				+ socio.getDni() + ", ejemplar=" + ejemplar.getTitulo() + ", estadoPrestamo=" + estadoPrestamo.getClass().getName() + ", fechaEntregado="
+				+ fechaEntregado + "]";
+	}
+
+    
 }

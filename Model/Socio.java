@@ -52,9 +52,13 @@ public class Socio extends Usuario {
     }
 
     public void comunicarVencimiento() {
+    	//todo
     }
 
     public void verHistorialPrestamos() {
+    	for(Prestamo prestamo: this.prestamos) {
+    		System.out.println(prestamo);
+    	}
     }
 
     public List<Prestamo> getPrestamos() {
@@ -64,4 +68,13 @@ public class Socio extends Usuario {
     public void setPrestamos(List<Prestamo> prestamos) {
         this.prestamos = prestamos;
     }
+
+	@Override
+	public String toString() {
+		return "Socio [stateCuenta=" + stateCuenta.getClass().getName() + ", comunicacion=" + comunicacion + ", fechaLimiteDevolucion="
+				+ fechaLimiteDevolucion + ", tengoPremio=" + tengoPremio + ", prestamos=" + prestamos
+				+ ", strategyComunicacion=" + strategyComunicacion.getClass().getName() + "]";
+	}
+    
+    
 }
