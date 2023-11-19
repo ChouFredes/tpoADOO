@@ -1,25 +1,12 @@
-
 import java.util.*;
 
-/**
- * 
- */
 public class Sms implements StrategyComunicacion {
-
-    /**
-     * Default constructor
-     */
+	
+	private Integer numero;
+	
     public Sms() {
     }
 
-    /**
-     * 
-     */
-    private Integer numero;
-
-    /**
-     * @return
-     */
     public void comunicarVencimiento() {
         // TODO implement here
         return ;
