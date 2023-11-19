@@ -7,13 +7,8 @@ public class Bibliotecario extends Usuario {
     public Bibliotecario() {
     }
 
-    public void verHistorialPrestamos() {
-        // TODO implement here
-    }
-
-
     public void verHistorialPrestamos(Usuario socio) {
-        // TODO implement here
+        socio.verHistorialPrestamos();
     }
 
 }
